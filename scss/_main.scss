@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: $letra-principal;
+  background-image: url(https://us.123rf.com/450wm/eugenesergeev/eugenesergeev1402/eugenesergeev140200198/26146898-incoloro-pino-patr%C3%B3n-de-la-tabla-de-madera-textura-de-fondo.jpg);
+}
+
+.container-fluid{
+  font-family: 'Bebas Neue', cursive !important ;
+}
+
+.header{
+  background-image: url(https://us.123rf.com/450wm/eugenesergeev/eugenesergeev1402/eugenesergeev140200198/26146898-incoloro-pino-patr%C3%B3n-de-la-tabla-de-madera-textura-de-fondo.jpg);
+  border-bottom: 1px solid black;
+  .navbar-collapse {
+    flex-grow: 0 !important;
+  }
+}
+
+.contenedor__contenido{
+  min-height: 100vh;
+  padding-bottom: 40px;
+  .banner{
+    text-align: center;
+    padding-top: 15px;
+    p{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 3vw;
+      font-family: $letra-principal;
+    }
+  }
+  .textos{
+    padding-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.8rem;
+    .alcanceNacional{
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+    .calidad{
+      padding-right: 100px;
+      padding-left: 100px;  
+    }
+    .seguridad{
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
+}
+
+.contenedor__footer{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  text-align: center;
+  font-family: $letra-principal;
+  .btn-outline-danger{
+    color: rgb(255, 0, 124) !important;
+    border-color: rgb(255, 0, 124) !important;
+  }
+  .copyright {
+    p{
+      margin-bottom: 0rem !important;
+      &::before{
+        content:'|'
+      }
+      &::after{
+        content:'|'
+      }
+    } 
+  }
+}
